@@ -25,7 +25,7 @@ Powstała z myślą o osobach, które chcą odżywiać się lepiej, a jednocześ
 
 ```bash
 # 1. Sklonuj repozytorium
-git clone https://github.com/<twoj-username>/fit-recipes.git
+git clone https://github.com/1Kr3ksu/fit-recipes.git
 
 # 2. Przejdź do katalogu projektu
 cd fit-recipes
