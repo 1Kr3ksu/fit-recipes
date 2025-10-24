@@ -1,0 +1,189 @@
+.footer {
+  background: #2c2c2c;
+  color: white;
+  padding: 60px 0 30px;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+/* Logo i opis */
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.logo-symbol {
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-fit {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2E7D32;
+  letter-spacing: -0.5px;
+}
+
+.logo-recipes {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4CAF50;
+  letter-spacing: 1px;
+  margin-top: -2px;
+}
+
+.footer-description {
+  color: #b8b8b8;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.social-section {
+  display: none;
+}
+
+/* Linki nawigacyjne */
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.footer-column h4 {
+  color: #b8b8b8;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 5px 0;
+}
+
+.footer-column a:hover {
+  color: #4CAF50;
+  transform: translateX(5px);
+}
+
+/* Linia oddzielająca */
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #444 50%, transparent 100%);
+  margin: 40px 0;
+}
+
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Animacje hover */
+.footer-column a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.footer-column li {
+  position: relative;
+}
+
+.footer-column a:hover::before {
+  width: 20px;
+}
+
+/* Subtle background pattern */
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(76, 175, 80, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(76, 175, 80, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Focus states for accessibility */
+.footer-column a:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* Logo hover effect */
+.footer-logo {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.footer-logo:hover .logo-icon {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}

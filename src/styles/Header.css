@@ -1,0 +1,225 @@
+/* ...existing code... */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.logo-symbol {
+  font-size: 24px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-fit {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2E7D32;
+  letter-spacing: -0.5px;
+}
+
+.logo-recipes {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4CAF50;
+  letter-spacing: 1px;
+  margin-top: -2px;
+}
+
+/* ...existing code... */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.08);
+  transform: translateY(-1px);
+}
+
+.nav-link:active {
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.12);
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.avatar-circle:hover {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  transform: scale(1.05);
+  border-color: rgba(76, 175, 80, 0.3);
+}
+
+.avatar-circle .material-icons {
+  font-size: 20px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.avatar-circle:hover .material-icons {
+  color: white;
+}
+
+.icon-item {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.icon-item:hover {
+  background: rgba(76, 175, 80, 0.08);
+}
+
+.shopping-icons {
+  font-size: 24px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.icon-item:hover .shopping-icons {
+  color: #4CAF50;
+  transform: scale(1.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #45a049 0%, #4CAF50 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+
+/* Active link styling */
+.nav-link.active {
+  color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+  font-weight: 600;
+}
+
+/* Dropdown menu styling (if needed) */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  padding: 8px 0;
+  margin-top: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background: rgba(76, 175, 80, 0.08);
+  color: #4CAF50;
+}

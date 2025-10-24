@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import '../styles/Hero_section.css'
 
 function Hero_section(){
 return (
@@ -51,12 +52,15 @@ return (
             </div>
         </div>
     </section>
+
+    <section className="calculator-cta">
         <h1>Nie wiesz ile jeść?</h1>
-    <h1>Kalkulator Kalorii</h1>
-    <p>Kalkulator kalorii Fit Recipes pokaże Ci, ile powinieneś jeść, żeby osiągnąć swój cel. Chcesz schudnąć, przytyć lub utrzymać aktualną masę ciała?</p>
-    <Link to="/kalkulator">
-        <button className="btn-calculate">Oblicz swoje zapotrzebowanie</button>
-    </Link>
+        <h1>Kalkulator Kalorii</h1>
+        <p>Kalkulator kalorii Fit Recipes pokaże Ci, ile powinieneś jeść, żeby osiągnąć swój cel. Chcesz schudnąć, przytyć lub utrzymać aktualną masę ciała?</p>
+        <Link to="/kalkulator">
+            <button className="btn-calculate">Oblicz swoje zapotrzebowanie</button>
+        </Link>
+    </section>
     </>
 )
 }

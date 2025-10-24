@@ -1,0 +1,328 @@
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 120px 20px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><path d="M0,20 Q250,80 500,50 T1000,30 L1000,100 L0,100 Z"/></svg>') no-repeat bottom;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.hero-button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Features Section */
+.features {
+  padding: 100px 20px;
+  background: #f8f9fa;
+}
+
+.features-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.phone-mockup {
+  text-align: center;
+  position: relative;
+}
+
+.phone-mockup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.phone-mockup img:hover {
+  transform: translateY(-10px);
+}
+
+.features-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.features-text > p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.feature-list {
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Calculator CTA Section */
+.features > h1:first-of-type {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #333;
+  margin: 80px 0 16px;
+  font-weight: 700;
+}
+
+.features > h1:last-of-type {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #4CAF50;
+  margin: 0 0 24px;
+  font-weight: 800;
+}
+
+.features > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.features > a {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Buttons */
+.btn-primary, .btn-calculate {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-calculate {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+  padding: 18px 36px;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover, .btn-calculate:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
+}
+
+.btn-calculate:hover {
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active, .btn-calculate:active {
+  transform: translateY(-1px);
+}
+
+
+
+.hero h1, .hero p, .hero-button {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero p {
+  animation-delay: 0.2s;
+}
+
+.hero-button {
+  animation-delay: 0.4s;
+}
+
+/* Hover effects for feature items */
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.05) 0%, rgba(102, 126, 234, 0.05) 100%);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-item:hover::before {
+  opacity: 1;
+}
+
+.feature-item {
+  position: relative;
+  overflow: hidden;
+}
+.calculator-cta {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.calculator-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(76,175,80,0.05)"><path d="M0,50 Q250,0 500,50 T1000,50 L1000,100 L0,100 Z"/></svg>') no-repeat bottom;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.calculator-cta h1:first-of-type {
+  font-size: 2.8rem;
+  color: #333;
+  margin: 0 0 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.calculator-cta h1:last-of-type {
+  font-size: 3.2rem;
+  color: #4CAF50;
+  margin: 0 0 24px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.calculator-cta p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* ...existing code... */
+
+.calculator-cta .btn-calculate {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.calculator-cta .btn-calculate:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
+}
+
+.calculator-cta .btn-calculate:active {
+  transform: translateY(-1px);
+}

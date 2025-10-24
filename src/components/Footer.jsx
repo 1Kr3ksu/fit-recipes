@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import '../styles/Footer.css'
 function Footer() {
     return (
         <footer className="footer">
@@ -12,8 +12,8 @@ function Footer() {
                             <span className="logo-recipes">RECIPES</span>
                         </h3>
                         <p className="footer-description">
-                            Fit Recipes to miejsce, gdzie od ponad 7 lat pomagamy 
-                            w wyborach żywieniowych Polaków.
+                            Fit Recipes to miejsce, gdzie znajdziesz zdrowe przepisy i narzędzia, 
+                            które pomogą Ci osiągnąć Twoje cele żywieniowe.
                         </p>
                         <div className="social-section">
                             <p>Obserwuj nas:</p>
