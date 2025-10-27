@@ -19,12 +19,12 @@ return (
             </Link>
         </div>
         
-        <div className="navbar-menu">
+            <div className="navbar-menu">
             <Link to="/aplikacja" className="nav-link">Aplikacja</Link>
             <Link to="/kalkulator" className="nav-link">Kalkulator</Link>
-            <a href="#" className="nav-link">O nas</a>
-            <a href="#" className="nav-link">Baza wiedzy</a>
-            <a href="#" className="nav-link">Kontakt</a>
+            <Link to="/about" className="nav-link">O nas</Link>
+               <a href="#" className="nav-link">Baza wiedzy</a>
+               <Link to="/contact" className="nav-link">Kontakt</Link>
         </div>
         
       <div className="user-avatar">
