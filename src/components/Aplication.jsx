@@ -1,3 +1,5 @@
+import '../styles/Application.css';
+
 function Application(){
     // Przykładowe przepisy (tymczasowo ręcznie dodane)
     const recipes = [
@@ -61,26 +63,29 @@ function Application(){
         <div className="application-page">
             {/* Hero sekcja */}
             <section className="app-hero">
-                <div className="app-hero-content">
-                    <h1>🥗 Fit Recipes - Baza zdrowych przepisów</h1>
-                    <p>Przeglądaj nasze zdrowe przepisy i znajdź inspiracje na każdy posiłek</p>
-                </div>
-            </section>
+                    <div className="app-hero-content">
+                        <h1>Fit Recipes — baza zdrowych przepisów</h1>
+                        <p>Przeglądaj nasze zdrowe przepisy i znajdź inspiracje na każdy posiłek</p>
+                    </div>
+                </section>
 
             {/* Baza przepisów */}
             <section className="recipes-section">
                 <div className="container">
-                    <h2>📚 Nasze przepisy</h2>
+                    <h2>Nasze przepisy</h2>
                     <div className="recipes-grid">
                         {recipes.map(recipe => (
                             <div key={recipe.id} className="recipe-card">
-                                <div className="recipe-image">{recipe.image}</div>
+                                <div className="recipe-image">
+                                    {/* image placeholder - replace with <img src=... /> when available */}
+                                    <div className="image-placeholder" aria-hidden="true"></div>
+                                </div>
                                 <div className="recipe-content">
                                     <h3>{recipe.name}</h3>
                                     <div className="recipe-info">
                                         <span className="calories">{recipe.calories} kcal</span>
-                                        <span className="time">⏱️ {recipe.time}</span>
-                                        <span className="difficulty">📊 {recipe.difficulty}</span>
+                                        <span className="time">{recipe.time}</span>
+                                        <span className="difficulty">{recipe.difficulty}</span>
                                     </div>
                                     <div className="ingredients">
                                         <strong>Składniki:</strong>
