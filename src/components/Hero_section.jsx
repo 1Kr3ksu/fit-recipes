@@ -8,7 +8,7 @@ return (
         <h1>Jedz ulubione produkty i osiągnij wymarzoną sylwetkę</h1>
         <p>Odkryj zdrowe przepisy, które pomogą Ci w drodze do lepszego zdrowia i kondycji</p>
         <div className="hero-button">
-            <button className="btn-primary">Sprawdź aplikacje</button>
+            <Link to="/aplikacja" className="btn-primary">Sprawdź aplikacje</Link>
         </div>
     </section>
 
@@ -48,7 +48,7 @@ return (
                     </div>
                 </div>
                 
-                <button className="btn-primary">Sprawdź aplikację</button>
+              <Link to="/aplikacja" className="btn-primary">Sprawdź aplikacje</Link>
             </div>
         </div>
     </section>

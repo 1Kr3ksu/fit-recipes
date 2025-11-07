@@ -34,7 +34,7 @@ return (
             <div className="icon-item">
               <span className="material-icons shopping-icons">shopping_bag</span>
             </div>
-            <button className="btn-primary">Sprawdź apkę</button>
+             <Link to="/aplikacja" className="btn-primary">Sprawdź aplikacje</Link>
         </div>
     </nav>
     </>
