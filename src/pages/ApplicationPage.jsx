@@ -1,4 +1,4 @@
-import Application from '../components/Aplication'
+import Application from '@components/Aplication'
 
 function ApplicationPage() {
   return (

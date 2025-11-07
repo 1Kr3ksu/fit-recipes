@@ -18,8 +18,9 @@ Powstała z myślą o osobach, które chcą odżywiać się lepiej, a jednocześ
 
 - ⚛️ **React** – frontend aplikacji  
 - 🧭 **React Router** – nawigacja między stronami  
-- 🪄 **Tailwind CSS** – stylowanie interfejsu  
+- Nauczyć się SCSS - wygodniejszy css do wiekszych projektów , np nie musze nazywac osobno kazdego h1 
 - 🌐 **API / mock data** – pobieranie przepisów (planowane własne API)
+
 
 ## 🚀 Uruchomienie projektu
 
@@ -32,6 +33,7 @@ cd fit-recipes
 
 # 3. Zainstaluj zależności
 npm install
+npm install sass
 
 # 4. Uruchom aplikację
 npm run dev
